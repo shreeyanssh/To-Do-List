@@ -53,7 +53,7 @@ input{
     padding: 10px;
 }
 
-button{
+.add{
     outline: none;
     border: none;
     padding: 10px 30px; 
@@ -66,12 +66,16 @@ button{
 }
 
 ul li{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
     list-style: none;  /*to remove the dot */
     font-size: 17px;
     padding: 12px 8px 12px 50px;
     cursor: pointer;
     user-select: none;
     position: relative;
+    word-wrap: break-word;
 }
 
 ul li::before{
@@ -94,4 +98,20 @@ ul li.checked{
 
 ul li.checked::before{
     background-image: url(images/checked.png);
+}
+
+span.delete{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+    color: #ff5945;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+span.delete:hover{
+    background-color: #edeef0;
 }
